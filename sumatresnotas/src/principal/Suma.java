@@ -8,7 +8,7 @@ public class Suma {
     public static void main(String[] args){
         
         Scanner entrada = new Scanner(System.in);
-        
+        String sumaString;
         float nota1, nota2, nota3, nota4, nota5, suma;
         
         System.out.println("Ingresa 3 calificaciones");
@@ -25,8 +25,9 @@ public class Suma {
         System.out.println(nota5);
 
         suma = nota1 + nota2 + nota3 + nota4;
-        
-        System.out.println("La suma es: " + suma);
+        //mostramos el resultado solo con 2 digitos decimales
+        sumaString = String.format("%.2f", suma);
+        System.out.println("La suma es: " + sumaString);
         
     }
 }
